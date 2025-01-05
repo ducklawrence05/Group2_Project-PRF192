@@ -4,13 +4,13 @@
   <pre class="code-title">Source</pre>
   <pre class="src"><code class="language-c">#include &lt;stdio.h&gt;
 int main() {
-  int width, height;
-  printf("Nhap chieu rong va chieu cao cua hinh chu nhat: ");
+  int length, width;
+  printf("Nhập chiều dài và chiều rộng của hình chữ nhật: ");
+  scanf("%d", &length);
   scanf("%d", &width);
-  scanf("%d", &height);
-  for (int i = 0; i &lt; height; i++) {
+  for (int i = 0; i &lt; length; i++) {
       for (int j = 0; j &lt; width; j++) {
-          if (i == 0 || i == height - 1 || j == 0 || j == width - 1) {
+          if (i == 0 || i == length - 1 || j == 0 || j == width - 1) {
               printf("* ");
           } else {
               printf("  ");
